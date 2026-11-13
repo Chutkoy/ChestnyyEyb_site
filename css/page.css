@@ -154,6 +154,7 @@ button {
   color: #d5d5d5;
   line-height: 1.6;
   position: relative;
+  padding-right: 60px;
 }
 
 .page__image {
@@ -321,5 +322,9 @@ button {
   .page__close {
     width: 30px;
     height: 30px;
+  }
+
+  .page__content {
+    padding-right: 50px;
   }
 }
