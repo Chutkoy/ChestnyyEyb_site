@@ -55,6 +55,7 @@ button {
 }
 
 .page {
+  --close-hover: #5eafa4;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -71,7 +72,42 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  --page-accent: #5eafa4;
+}
+
+.page_cooperation {
+  --close-hover: #962828;
+}
+
+.page_development {
+  --close-hover: #d4af37;
+}
+
+.page_share {
+  --close-hover: #24a0b0;
+}
+
+.page_about {
+  --close-hover: #766d7b;
+}
+
+.page_contacts {
+  --close-hover: #5eafa4;
+}
+
+.page_copyright {
+  --close-hover: #f7a3ab;
+}
+
+.page_privacy {
+  --close-hover: #9595eb;
+}
+
+.page_requisites {
+  --close-hover: #807f53;
+}
+
+.page_terms {
+  --close-hover: #566ebf;
 }
 
 .container {
@@ -146,7 +182,7 @@ button {
 }
 
 .page__close:hover svg .close-icon {
-  fill: var(--page-accent, #5eafa4);
+  fill: var(--close-hover, #5eafa4);
 }
 
 .page__content {
