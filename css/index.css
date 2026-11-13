@@ -77,30 +77,6 @@ button {
 
 .content {
   flex: 1 0 auto;
-  display: flex;
-}
-
-.main {
-  width: 100%;
-  background: transparent;
-  display: flex;
-}
-
-.main > .container {
-  display: flex;
-}
-
-.main__wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-  position: relative;
-  gap: 24px;
 }
 
 .container {
@@ -129,21 +105,19 @@ button {
 .header {
   width: 100%;
   background: transparent;
-  flex: 0 0 auto;
 }
 
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 60px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .header__wrapper {
-    padding-top: 30px;
+    padding-top: 40px;
   }
 }
 
@@ -156,7 +130,7 @@ button {
 }
 
 .header__logo {
-  width: 220px;
+  width: 245px;
   fill: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -207,7 +181,7 @@ button {
 
 .header__contacts-name {
   width: 340px;
-  height: 88px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,6 +267,33 @@ button {
   background: transparent;
 }
 
+.main {
+  width: 100%;
+  background: transparent;
+}
+
+.main__wrapper {
+  min-height: calc(100dvh - 220px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .main__wrapper {
+    min-height: initial;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+  }
+}
+
 .main__inner {
   display: flex;
   align-items: center;
@@ -314,7 +315,7 @@ button {
 }
 
 .main__image-l {
-  width: 240px;
+  width: 280px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -341,7 +342,7 @@ button {
 }
 
 .main__image-c {
-  width: 300px;
+  width: 340px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -368,7 +369,7 @@ button {
 }
 
 .main__image-r {
-  width: 220px;
+  width: 250px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -448,7 +449,6 @@ button {
   cursor: pointer;
   transition: all 0.3s ease;
   line-height: 1.2;
-  font-size: 14px;
 }
 
 .main__requisites_left {
@@ -543,7 +543,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 960px) {
@@ -598,23 +599,4 @@ button {
 
 .footer__copyright-bottom:hover a {
   color: #f7a3ab;
-}
-
-@media screen and (min-width: 961px) and (min-height: 900px) {
-  html,
-  body {
-    overflow: hidden;
-    height: 100%;
-  }
-
-  .page {
-    height: 100vh;
-    min-height: 0;
-  }
-
-  .content {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow: hidden;
-  }
 }
