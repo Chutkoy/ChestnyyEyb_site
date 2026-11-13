@@ -96,22 +96,37 @@ button {
   }
 }
 
-.page__header {
+.page__main {
+  flex: 1 0 auto;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.page__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #1e2021;
+  border-radius: 8px;
+  padding: 50px 60px 50px 60px;
   box-sizing: border-box;
 }
 
 .page__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
   width: 40px;
   height: 40px;
   display: block;
-  margin-left: auto;
   transition: opacity 0.3s ease;
+  z-index: 10;
 }
 
 .page__close:hover {
@@ -133,38 +148,29 @@ button {
   fill: #5eafa4;
 }
 
-.page__main {
-  flex: 1 0 auto;
-  width: 100%;
-}
-
-.page__wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-}
-
 .page__content {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
   color: #d5d5d5;
   line-height: 1.6;
+  position: relative;
 }
 
 .page__image {
   width: 220px;
   height: 220px;
   float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  shape-outside: margin-box;
 }
 
 .page__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
 
 .page__image-copyright {
@@ -173,21 +179,21 @@ button {
 }
 
 .page__text {
-  margin-top: 5px;
+  margin-top: 15px;
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
   color: #d5d5d5;
   text-indent: 40px;
-  line-height: 20px;
+  line-height: 1.6;
 }
 
 .page__text-top {
-  margin-top: 20px;
+  margin-top: 0;
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
   color: #d5d5d5;
   text-indent: 40px;
-  line-height: 20px;
+  line-height: 1.6;
 }
 
 .page__text-top a {
@@ -203,10 +209,10 @@ button {
 }
 
 .page__separator {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: none;
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid #3a3c3e;
   clear: both;
 }
 
@@ -214,14 +220,16 @@ button {
   font-family: "Montserrat_0", sans-serif;
   font-weight: bold;
   color: #d5d5d5;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size: 18px;
 }
 
 .page__subtitle {
   font-family: "Montserrat_0", sans-serif;
   color: #d5d5d5;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .page__subtitle a {
@@ -229,11 +237,12 @@ button {
 }
 
 .page__list {
-  margin-top: 20px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   margin-left: 20px;
+  list-style-position: inside;
 }
 
 .page__list li span {
@@ -241,7 +250,7 @@ button {
 }
 
 .page__list li p {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .page__list li a {
@@ -252,29 +261,50 @@ button {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-left: 40px;
+  gap: 8px;
+  margin-left: 20px;
   list-style-type: circle;
+  list-style-position: inside;
 }
 
 .page__signature {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
   clear: both;
+  text-indent: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .page__wrapper {
+    padding: 40px 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .page__image {
     float: none;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
   }
 
   .page__text-top {
-    margin-top: 20px;
+    text-indent: 0;
+    text-align: center;
+  }
+
+  .page__text {
+    text-indent: 25px;
   }
 
   .page__wrapper {
-    padding-bottom: 40px;
+    padding: 40px 20px;
+    border-radius: 0;
+  }
+
+  .page__close {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
   }
 }
