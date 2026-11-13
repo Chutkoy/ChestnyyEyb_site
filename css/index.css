@@ -17,8 +17,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 button { border: none; cursor: pointer; }
 
 .page {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
   height: 100dvh;
   width: 100%;
   font-optical-sizing: auto;
@@ -33,7 +33,13 @@ button { border: none; cursor: pointer; }
   background-position: top center;
 }
 
-.content { display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+.content { 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  overflow: hidden; 
+}
+
 .container {
   max-width: 1920px; width: 100%;
   padding-left: 120px; padding-right: 120px;
@@ -42,9 +48,10 @@ button { border: none; cursor: pointer; }
 @media screen and (max-width: 1440px) { .container { padding-left: 40px; padding-right: 40px; } }
 @media screen and (max-width: 768px) { .container { padding-left: 20px; padding-right: 20px; } }
 
+.header { flex-shrink: 0; }
 .header__wrapper {
   display: flex; align-items: center; justify-content: space-between;
-  padding-top: 30px; padding-bottom: 10px;
+  padding-top: 20px; padding-bottom: 10px;
 }
 .header__logo { width: 245px; fill: #d5d5d5; cursor: pointer; transition: all 0.3s ease; display: block; }
 .header__logo:hover { fill: #766d7b; }
@@ -52,7 +59,7 @@ button { border: none; cursor: pointer; }
 
 .header__contacts { display: flex; align-items: center; cursor: pointer; z-index: 3; }
 .header__contacts-name {
-  width: 340px; height: 80px; display: flex; align-items: center; justify-content: center;
+  width: 340px; height: 70px; display: flex; align-items: center; justify-content: center;
   font-family: "Buyan", sans-serif; font-size: 40px; text-transform: uppercase;
   color: #d5d5d5; border-bottom: 1px solid #d5d5d5; position: relative;
 }
@@ -60,7 +67,7 @@ button { border: none; cursor: pointer; }
   position: absolute; left: 0; bottom: -4px; content: ""; width: 7px; height: 7px;
   border-radius: 50%; background: #d5d5d5;
 }
-.header__contacts-phones { display: flex; flex-direction: column; gap: 5px; margin-top: 20px; }
+.header__contacts-phones { display: flex; flex-direction: column; gap: 5px; margin-top: 15px; }
 .header__contacts-phones li { display: flex; align-items: center; gap: 5px; }
 .header__contacts-phones li a { font-family: "Montserrat_0", sans-serif; color: #d5d5d5; }
 .header__contacts-phones li span { display: block; width: 7px; height: 7px; border-radius: 50%; background: #d5d5d5; position: relative; }
@@ -68,7 +75,12 @@ button { border: none; cursor: pointer; }
   content: ""; width: 1px; height: 20px; background: #d5d5d5; position: absolute; left: 3px; bottom: -20px;
 }
 
-.main { display: flex; flex-direction: column; flex: 1; height: 100%; }
+.main { 
+  display: flex; 
+  flex-direction: column; 
+  flex: 1; 
+  min-height: 0; 
+}
 .main__wrapper { 
   display: flex; 
   flex-direction: column; 
@@ -76,6 +88,7 @@ button { border: none; cursor: pointer; }
   justify-content: space-evenly; 
   height: 100%; 
   width: 100%; 
+  padding: 20px 0;
 }
 .main__inner { display: flex; align-items: center; justify-content: center; gap: 110px; width: 100%; }
 
@@ -87,7 +100,7 @@ button { border: none; cursor: pointer; }
 .main__image-c svg:hover { fill: #d4af37; }
 .main__image-r svg:hover { fill: #24a0b0; }
 
-.main__links { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.main__links { display: flex; flex-direction: column; align-items: center; gap: 15px; z-index: 2; }
 .main__links-list { display: flex; align-items: center; justify-content: center; gap: 15px; }
 .main__links-list li a {
   display: flex; align-items: center; justify-content: center; width: 48px; height: 48px;
@@ -96,18 +109,14 @@ button { border: none; cursor: pointer; }
 .main__links-list li a:hover { background: rgba(213, 213, 213, 0.15); box-shadow: 0px 0px 8px 7px rgba(230, 236, 241, 0.15); }
 .main__links-list li a img { width: 28px; height: 28px; object-fit: contain; }
 
-.footer { background: transparent; }
-.footer__wrapper { display: flex; flex-direction: column; align-items: center; padding-bottom: 20px; width: 100%; }
+.footer { flex-shrink: 0; background: transparent; padding-bottom: 20px; }
+.footer__wrapper { display: flex; flex-direction: column; align-items: center; width: 100%; }
 .footer__top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
-  margin-bottom: 20px;
+  width: 100%; display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;
 }
-.footer__contacts { display: flex; flex-direction: column; gap: 15px; }
+.footer__contacts { display: flex; flex-direction: column; gap: 10px; }
 .footer__contacts-list { display: flex; flex-direction: column; }
-.footer__contacts-list li { font-family: "Montserrat_0", sans-serif; font-size: 14px; color: #d5d5d5; }
+.footer__contacts-list li { font-family: "Montserrat_0", sans-serif; font-size: 14px; color: #d5d5d5; line-height: 1.3; }
 .requisites-hover.active.footer__contacts-list li { color: #807f53; }
 .bank-list { text-align: end; }
 
@@ -121,7 +130,7 @@ button { border: none; cursor: pointer; }
 
 @media screen and (max-width: 960px) {
   html, body { overflow: auto; }
-  .page { height: auto; min-height: 100dvh; display: flex; flex-direction: column; }
+  .page { height: auto; min-height: 100dvh; }
   .header__wrapper { flex-direction: column; gap: 20px; padding-top: 20px; }
   .top-title { width: 300px; display: block; fill: #d5d5d5; }
   .header__contacts { display: none; }
