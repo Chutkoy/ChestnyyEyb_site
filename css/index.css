@@ -99,7 +99,11 @@ button { border: none; cursor: pointer; }
 .footer { background: transparent; }
 .footer__wrapper { display: flex; flex-direction: column; align-items: center; padding-bottom: 20px; width: 100%; }
 .footer__top {
-  width: 100%; display: flex; justify-content: space-between; margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; 
+  margin-bottom: 20px;
 }
 .footer__contacts { display: flex; flex-direction: column; gap: 15px; }
 .footer__contacts-list { display: flex; flex-direction: column; }
