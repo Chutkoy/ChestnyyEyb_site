@@ -298,6 +298,7 @@ button {
   display: flex;
   align-items: center;
   gap: 110px;
+  transform: translateY(-10%);
 }
 
 @media screen and (max-width: 1220px) {
@@ -305,12 +306,14 @@ button {
     width: 100%;
     justify-content: space-between;
     gap: 50px;
+    transform: translateY(-10%);
   }
 }
 
 @media screen and (max-width: 767px) {
   .main__inner {
     flex-direction: column;
+    transform: none;
   }
 }
 
