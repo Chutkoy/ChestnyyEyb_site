@@ -258,6 +258,23 @@ button {
 
 @media screen and (max-width: 960px) {
   .header__contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__contacts-name {
+    width: auto;
+    height: auto;
+    padding: 12px 0;
+    font-size: 28px;
+    border-bottom: 1px solid #d5d5d5;
+  }
+
+  .header__contacts-name::before {
+    display: none;
+  }
+
+  .header__contacts-phones {
     display: none;
   }
 }
