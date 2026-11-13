@@ -317,7 +317,7 @@ button {
   display: flex;
   align-items: center;
   gap: 110px;
-  transform: translateY(-6%);
+  transform: translateY(-10%);
 }
 
 @media screen and (max-width: 1220px) {
@@ -325,7 +325,7 @@ button {
     width: 100%;
     justify-content: space-between;
     gap: 50px;
-    transform: translateY(-6%);
+    transform: translateY(-10%);
   }
 }
 
