@@ -111,13 +111,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 30px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .header__wrapper {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 }
 
@@ -125,12 +125,13 @@ button {
   .header__wrapper {
     justify-content: center;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    padding-top: 30px;
   }
 }
 
 .header__logo {
-  width: 245px;
+  width: 200px;
   fill: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -143,7 +144,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .header__logo {
-    width: 300px;
+    width: 260px;
   }
 }
 
@@ -180,14 +181,14 @@ button {
 }
 
 .header__contacts-name {
-  width: 340px;
-  height: 100px;
+  width: 280px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Buyan", sans-serif;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 32px;
   text-transform: uppercase;
   color: #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
@@ -215,14 +216,15 @@ button {
 .header__contacts-phones {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   z-index: 3;
-  margin-top: 27px;
+  margin-top: 20px;
 }
 
 .header__contacts-phones li a {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
+  font-size: 14px;
   color: #d5d5d5;
   transition: all 0.3s ease;
 }
@@ -249,11 +251,11 @@ button {
 .header__contacts-phones li:not(:last-child) span::before {
   content: "";
   width: 1px;
-  height: 20px;
+  height: 18px;
   background: #d5d5d5;
   position: absolute;
   left: 3px;
-  bottom: -20px;
+  bottom: -18px;
 }
 
 @media screen and (max-width: 960px) {
@@ -290,16 +292,16 @@ button {
 }
 
 .main__wrapper {
-  min-height: calc(100dvh - 220px);
+  min-height: calc(100dvh - 130px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   box-sizing: border-box;
   position: relative;
-  gap: 40px;
+  gap: 15px;
 }
 
 @media screen and (max-width: 960px) {
@@ -314,8 +316,8 @@ button {
 .main__inner {
   display: flex;
   align-items: center;
-  gap: 110px;
-  transform: translateY(-10%);
+  gap: 90px;
+  transform: translateY(-6%);
 }
 
 @media screen and (max-width: 1220px) {
@@ -323,7 +325,7 @@ button {
     width: 100%;
     justify-content: space-between;
     gap: 50px;
-    transform: translateY(-10%);
+    transform: translateY(-6%);
   }
 }
 
@@ -335,7 +337,7 @@ button {
 }
 
 .main__image-l {
-  width: 280px;
+  width: 220px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -362,7 +364,7 @@ button {
 }
 
 .main__image-c {
-  width: 340px;
+  width: 260px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -389,7 +391,7 @@ button {
 }
 
 .main__image-r {
-  width: 250px;
+  width: 200px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -420,7 +422,7 @@ button {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: start;
-  gap: 40px;
+  gap: 30px;
 }
 
 @media screen and (max-width: 960px) {
@@ -465,10 +467,11 @@ button {
 .main__requisites li {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
+  font-size: 13px;
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .main__requisites_left {
@@ -501,7 +504,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
   z-index: 2;
   align-self: start;
 }
@@ -512,15 +515,15 @@ button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
 }
 
 .main__links-list li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(213, 213, 213, 0.05);
   transition: all 0.3s ease-out;
@@ -534,8 +537,8 @@ button {
 }
 
 .main__links-list li a img {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -563,8 +566,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
-  margin-top: 30px;
+  gap: 10px;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 960px) {
@@ -590,6 +593,7 @@ button {
 .footer__copyright-item li {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
+  font-size: 13px;
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -607,6 +611,7 @@ button {
 .footer__copyright-bottom {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
+  font-size: 13px;
   color: #d5d5d5;
   transition: all 0.3s ease;
   cursor: pointer;
