@@ -416,9 +416,9 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 40px;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
   box-sizing: border-box;
   position: relative;
 }
@@ -439,6 +439,8 @@ button {
   gap: 25px;
   z-index: 2;
   width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .main__links-list {
@@ -476,6 +478,8 @@ button {
 
 @media screen and (max-width: 767px) {
   .main__links {
+    margin-top: 20px;
+    margin-bottom: 20px;
     gap: 20px;
   }
 
@@ -498,6 +502,7 @@ button {
   display: flex;
   align-items: center;
   gap: 110px;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 1220px) {
@@ -511,6 +516,7 @@ button {
 @media screen and (max-width: 767px) {
   .main__inner {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 
