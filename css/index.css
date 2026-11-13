@@ -411,7 +411,7 @@ button {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items: center;
+  align-items: start;
   gap: 40px;
 }
 
@@ -419,6 +419,7 @@ button {
   .main__middle {
     grid-template-columns: 1fr;
     justify-items: center;
+    align-items: start;
     gap: 30px;
   }
 }
@@ -427,6 +428,7 @@ button {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-self: start;
   z-index: 3;
 }
 
@@ -436,6 +438,13 @@ button {
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: 1.4;
+}
+
+.main__requisites li:first-child {
+  min-height: 2.8em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .main__requisites_left {
@@ -454,6 +463,14 @@ button {
     align-items: center;
     text-align: center;
   }
+
+  .main__requisites li:first-child {
+    min-height: 0;
+  }
+
+  .main__links {
+    order: -1;
+  }
 }
 
 .requisites-hover.active.main__requisites li {
@@ -466,6 +483,7 @@ button {
   align-items: center;
   gap: 25px;
   z-index: 2;
+  align-self: start;
 }
 
 .main__links-list {
