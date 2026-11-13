@@ -111,13 +111,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 38px;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 1024px) {
   .header__wrapper {
-    padding-top: 30px;
+    padding-top: 38px;
   }
 }
 
@@ -126,12 +126,12 @@ button {
     justify-content: center;
     flex-direction: column;
     gap: 30px;
-    padding-top: 30px;
+    padding-top: 38px;
   }
 }
 
 .header__logo {
-  width: 200px;
+  width: 250px;
   fill: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -181,14 +181,14 @@ button {
 }
 
 .header__contacts-name {
-  width: 280px;
-  height: 70px;
+  width: 350px;
+  height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Buyan", sans-serif;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #d5d5d5;
   border-bottom: 1px solid #d5d5d5;
@@ -216,15 +216,15 @@ button {
 .header__contacts-phones {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 5px;
   z-index: 3;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .header__contacts-phones li a {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 17px;
   color: #d5d5d5;
   transition: all 0.3s ease;
 }
@@ -251,11 +251,11 @@ button {
 .header__contacts-phones li:not(:last-child) span::before {
   content: "";
   width: 1px;
-  height: 18px;
+  height: 22px;
   background: #d5d5d5;
   position: absolute;
   left: 3px;
-  bottom: -18px;
+  bottom: -22px;
 }
 
 @media screen and (max-width: 960px) {
@@ -292,7 +292,7 @@ button {
 }
 
 .main__wrapper {
-  min-height: calc(100dvh - 130px);
+  min-height: calc(100dvh - 160px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,7 +316,7 @@ button {
 .main__inner {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 110px;
   transform: translateY(-6%);
 }
 
@@ -337,7 +337,7 @@ button {
 }
 
 .main__image-l {
-  width: 220px;
+  width: 275px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -364,7 +364,7 @@ button {
 }
 
 .main__image-c {
-  width: 260px;
+  width: 325px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -391,7 +391,7 @@ button {
 }
 
 .main__image-r {
-  width: 200px;
+  width: 250px;
   height: auto;
   cursor: pointer;
   z-index: 2;
@@ -467,7 +467,7 @@ button {
 .main__requisites li {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 16px;
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -504,7 +504,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
   z-index: 2;
   align-self: start;
 }
@@ -515,15 +515,15 @@ button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
 }
 
 .main__links-list li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: rgba(213, 213, 213, 0.05);
   transition: all 0.3s ease-out;
@@ -537,8 +537,8 @@ button {
 }
 
 .main__links-list li a img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
@@ -566,8 +566,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-top: 5px;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 @media screen and (max-width: 960px) {
@@ -593,7 +593,7 @@ button {
 .footer__copyright-item li {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 16px;
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -611,7 +611,7 @@ button {
 .footer__copyright-bottom {
   font-family: "Montserrat_0", sans-serif;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 16px;
   color: #d5d5d5;
   transition: all 0.3s ease;
   cursor: pointer;
