@@ -19,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -35,6 +36,7 @@ a {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 h1,
@@ -81,7 +83,6 @@ button {
   width: 100%;
   padding-left: 120px;
   padding-right: 120px;
-  box-sizing: border-box;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -102,12 +103,16 @@ button {
   }
 }
 
+.header {
+  width: 100%;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
-  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .header__logo {
@@ -199,6 +204,7 @@ button {
   display: flex;
   flex-direction: column;
   flex: 1;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -228,7 +234,6 @@ button {
 }
 
 .main__links-list {
-  list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,14 +282,15 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background: transparent;
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10px;
   padding-bottom: 20px;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -302,7 +308,6 @@ button {
 }
 
 .footer__contacts-list {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
 }
@@ -311,6 +316,10 @@ button {
   font-family: "Montserrat_0", sans-serif;
   font-size: 14px;
   color: #d5d5d5;
+}
+
+.requisites-hover.active.footer__contacts-list li {
+  color: #807f53;
 }
 
 .bank-list { text-align: end; }
@@ -323,7 +332,6 @@ button {
 }
 
 .footer__copyright-item {
-  list-style-type: none;
   display: flex;
   gap: 15px;
 }
