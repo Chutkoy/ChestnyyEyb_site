@@ -71,6 +71,7 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  --page-accent: #5eafa4;
 }
 
 .container {
@@ -145,43 +146,7 @@ button {
 }
 
 .page__close:hover svg .close-icon {
-  fill: #5eafa4;
-}
-
-.page_cooperation .page__close:hover svg .close-icon {
-  fill: #962828;
-}
-
-.page_development .page__close:hover svg .close-icon {
-  fill: #d4af37;
-}
-
-.page_share .page__close:hover svg .close-icon {
-  fill: #24a0b0;
-}
-
-.page_about .page__close:hover svg .close-icon {
-  fill: #766d7b;
-}
-
-.page_contacts .page__close:hover svg .close-icon {
-  fill: #5eafa4;
-}
-
-.page_copyright .page__close:hover svg .close-icon {
-  fill: #f7a3ab;
-}
-
-.page_privacy .page__close:hover svg .close-icon {
-  fill: #9595eb;
-}
-
-.page_requisites .page__close:hover svg .close-icon {
-  fill: #807f53;
-}
-
-.page_terms .page__close:hover svg .close-icon {
-  fill: #566ebf;
+  fill: var(--page-accent, #5eafa4);
 }
 
 .page__content {
