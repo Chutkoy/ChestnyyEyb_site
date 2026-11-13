@@ -356,6 +356,13 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 960px) {
+  .footer__copyright {
+    margin-top: 0;
+  }
 }
 
 .footer__copyright-item {
@@ -440,7 +447,6 @@ button {
   z-index: 2;
   width: 100%;
   margin-top: 8vh;
-  margin-bottom: 8vh;
 }
 
 .main__links-list {
@@ -479,7 +485,6 @@ button {
 @media screen and (max-width: 960px) {
   .main__links {
     margin-top: 0;
-    margin-bottom: 0;
   }
 }
 
