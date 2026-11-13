@@ -99,13 +99,10 @@ button {
 }
 
 .page__close {
-  width: 40px;
+    width: 40px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #2a2c2e;
-  border-radius: 4px;
+  display: block;
+  margin-left: auto;
   transition: opacity 0.3s ease;
 }
 
