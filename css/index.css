@@ -438,13 +438,7 @@ button {
   color: #d5d5d5;
   cursor: pointer;
   transition: all 0.3s ease;
-  line-height: 1.4;
-}
-
-.main__requisites li:first-child {
-  min-height: 2.8em;
-  display: flex;
-  align-items: flex-start;
+  line-height: 1.2;
 }
 
 .main__requisites_left {
@@ -462,10 +456,6 @@ button {
   .main__requisites_right {
     align-items: center;
     text-align: center;
-  }
-
-  .main__requisites li:first-child {
-    min-height: 0;
   }
 
   .main__links {
