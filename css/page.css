@@ -157,10 +157,10 @@ button {
 }
 
 .page__image {
-  width: 220px;
-  height: 220px;
+  width: 330px;
+  height: 330px;
   float: left;
-  margin-right: 30px;
+  margin-right: 35px;
   margin-bottom: 20px;
   margin-top: 10px;
   shape-outside: margin-box;
@@ -174,8 +174,8 @@ button {
 }
 
 .page__image-copyright {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .page__text {
@@ -278,6 +278,16 @@ button {
   .page__wrapper {
     padding: 40px 30px;
   }
+
+  .page__image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .page__image-copyright {
+    width: 240px;
+    height: 240px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -285,6 +295,13 @@ button {
     float: none;
     display: block;
     margin: 0 auto 25px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .page__image-copyright {
+    width: 260px;
+    height: 260px;
   }
 
   .page__text-top {
