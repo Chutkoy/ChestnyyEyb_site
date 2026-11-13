@@ -424,6 +424,28 @@ button {
   }
 }
 
+.main__requisites-link {
+  display: block;
+  color: #d5d5d5;
+  align-self: start;
+  z-index: 3;
+}
+
+.main__requisites-link_left {
+  justify-self: start;
+}
+
+.main__requisites-link_right {
+  justify-self: end;
+}
+
+@media screen and (max-width: 960px) {
+  .main__requisites-link_left,
+  .main__requisites-link_right {
+    justify-self: center;
+  }
+}
+
 .main__requisites {
   list-style-type: none;
   display: flex;
