@@ -416,10 +416,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-sizing: border-box;
+  justify-content: space-evenly;
   position: relative;
 }
 
@@ -428,7 +425,9 @@ button {
     height: initial;
     padding-top: 40px;
     padding-bottom: 40px;
+    box-sizing: border-box;
     gap: 40px;
+    justify-content: flex-start;
   }
 }
 
@@ -439,9 +438,6 @@ button {
   gap: 25px;
   z-index: 2;
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 80px;
 }
 
 .main__links-list {
@@ -475,14 +471,6 @@ button {
   width: 28px;
   height: 28px;
   object-fit: contain;
-}
-
-@media screen and (max-width: 960px) {
-  .main__links {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-  }
 }
 
 @media screen and (max-width: 767px) {
