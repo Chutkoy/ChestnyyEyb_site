@@ -29,8 +29,7 @@ function acceptCookies() {
 }
 
 function declineCookies() {
-  //setCookie("cookieConsent", "false", 365);  //  Убираем срок действия
-  setCookie("cookieConsent", "false"); // Создаём сессионную cookie
+  setCookie("cookieConsent", "false");
   document.getElementById("cookieConsent").style.display = "none";
 }
 
@@ -38,17 +37,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const consentCookie = getCookie("cookieConsent");
   const consentBanner = document.getElementById("cookieConsent");
 
-  //  Удаляем куку при загрузке страницы
-  //deleteCookie("cookieConsent"); // Раскомментируй, чтобы удалить куку при каждой загрузке
-
   if (consentCookie === "true") {
-    consentBanner.style.display = "none"; // Скрываем баннер, если кука принята
+    consentBanner.style.display = "none";
   } else {
-    consentBanner.style.display = "flex"; // Отображаем баннер если куки нет или отклонены
+    consentBanner.style.display = "flex";
   }
 
   if (consentCookie === "true") {
-    // Код для инициализации сервисов, использующих куки
     console.log("Куки приняты, инициализируем сервисы");
   }
 });
