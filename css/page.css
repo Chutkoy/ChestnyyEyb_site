@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "Buyan";
+  src: local("Buyan Regular"),
+    url("../fonts/BuyanRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat_0";
+  src: local("Montserrat_0"),
+    url("../fonts/Montserrat_0.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #252729;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  margin: 0 auto;
+  color: #d5d5d5;
+  background-image: url(../images/Skate_89.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding-left: 120px;
+  padding-right: 120px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.page__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.page__close {
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.page__close:hover {
+  opacity: 0.7;
+}
+
+.page__close svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.page__close svg .close-icon {
+  fill: #d5d5d5;
+  transition: fill 0.3s ease;
+}
+
+.page__close:hover svg .close-icon {
+  fill: #5eafa4;
+}
+
+.page__main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.page__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+}
+
+.page__content {
+  font-family: "Montserrat_0", sans-serif;
+  font-weight: normal;
+  color: #d5d5d5;
+  line-height: 1.6;
+}
+
+.page__image {
+  width: 220px;
+  height: 220px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.page__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page__image-copyright {
+  width: 200px;
+  height: 200px;
+}
+
+.page__text {
+  margin-top: 5px;
+  font-family: "Montserrat_0", sans-serif;
+  font-weight: normal;
+  color: #d5d5d5;
+  text-indent: 40px;
+  line-height: 20px;
+}
+
+.page__text-top {
+  margin-top: 20px;
+  font-family: "Montserrat_0", sans-serif;
+  font-weight: normal;
+  color: #d5d5d5;
+  text-indent: 40px;
+  line-height: 20px;
+}
+
+.page__text-top a {
+  color: #9595eb;
+}
+
+.page__text span {
+  font-weight: bold;
+}
+
+.page__text-top span {
+  font-weight: bold;
+}
+
+.page__separator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #d5d5d5;
+  clear: both;
+}
+
+.page__title {
+  font-family: "Montserrat_0", sans-serif;
+  font-weight: bold;
+  color: #d5d5d5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.page__subtitle {
+  font-family: "Montserrat_0", sans-serif;
+  color: #d5d5d5;
+  margin-top: 10px;
+}
+
+.page__subtitle a {
+  color: #9595eb;
+}
+
+.page__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.page__list li span {
+  font-weight: bold;
+}
+
+.page__list li p {
+  margin-top: 10px;
+}
+
+.page__list li a {
+  color: #9595eb;
+}
+
+.page__list-nested {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+.page__signature {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+@media screen and (max-width: 767px) {
+  .page__image {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .page__text-top {
+    margin-top: 20px;
+  }
+
+  .page__wrapper {
+    padding-bottom: 40px;
+  }
+}
