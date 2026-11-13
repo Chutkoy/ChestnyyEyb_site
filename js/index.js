@@ -25,12 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
-
-  const requisitesBlock = document.getElementById("requisites");
-  if (requisitesBlock) {
-    requisitesBlock.addEventListener("click", function () {
-      window.location.href = "./requisites/";
-    });
-    requisitesBlock.style.cursor = "pointer";
-  }
 });
