@@ -129,18 +129,6 @@ button {
   }
 }
 
-.top-title {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .top-title {
-    width: 300px;
-    display: block;
-    fill: #d5d5d5;
-  }
-}
-
 .header__logo {
   width: 245px;
   fill: #d5d5d5;
