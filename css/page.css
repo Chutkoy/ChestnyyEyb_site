@@ -119,14 +119,14 @@ button {
 }
 
 .page__close {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 40px;
   height: 40px;
   display: block;
-  transition: opacity 0.3s ease, top 0.1s linear;
-  z-index: 100;
+  transition: opacity 0.3s ease;
+  z-index: 10;
 }
 
 .page__close:hover {
@@ -319,8 +319,9 @@ button {
   }
 
   .page__close {
+    top: 10px;
+    right: 10px;
     width: 30px;
     height: 30px;
-    right: 10px;
   }
 }
