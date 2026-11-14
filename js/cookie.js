@@ -90,7 +90,8 @@ function prepareConsentBanner() {
   var banner = document.getElementById("cookieConsent");
   if (!banner) return;
 
-  banner.setAttribute("role", "region");
+  banner.setAttribute("role", "status");
+  banner.setAttribute("aria-live", "polite");
   banner.setAttribute("aria-label", "Уведомление об использовании cookie");
 
   var title = banner.querySelector(".cookie-title");
