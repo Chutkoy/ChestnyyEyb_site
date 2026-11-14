@@ -38,11 +38,37 @@
         },
         {
           "type": "getapps",
-          "url": "https://global.app.mi.com/developer?id=1156139"
+          "url": "https://global.app.mi.com/details?id=com.gameeyb.uncleabestories"
         }
       ],
       "documentation": "https://chestnyyeyb.ru/about/"
     },
+    {
+      "type": "mobile-application",
+      "name": "КвадроТактика",
+      "description": "Тактическая игра в кубики",
+      "platform": "android",
+      "minVersion": "7.0",
+      "category": "strategy",
+      "rating": "4.8",
+      "ratingCount": "72",
+      "links": [
+        {
+          "type": "google-play",
+          "url": "https://play.google.com/store/apps/details?id=com.gameeyb.quadrotactics"
+        },
+        {
+          "type": "rustore",
+          "url": "https://www.rustore.ru/catalog/app/com.gameeyb.quadrotactics"
+        },
+        {
+          "type": "getapps",
+          "url": "https://global.app.mi.com/details?id=com.gameeyb.quadrotactics"
+        }
+      ],
+      "documentation": "https://chestnyyeyb.ru/about/"
+    }
+  ],
     {
       "type": "mobile-application",
       "name": "КвадроТактика",
