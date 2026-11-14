@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Buyan";
-  src: url("../fonts/BuyanRegular.woff2") format("woff2"),
-    url("../fonts/BuyanRegular.ttf") format("truetype");
+  src: url("../fonts/BuyanRegular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "Montserrat_0";
-  src: url("../fonts/Montserrat_0.woff2") format("woff2"),
-    url("../fonts/Montserrat_0.ttf") format("truetype");
+  src: url("../fonts/Montserrat_0.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
