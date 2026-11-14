@@ -1,0 +1,161 @@
+{
+  "$schema": "https://example.com/ai-catalog-schema.json",
+  "name": "Честный Эйб",
+  "version": "1.0.0",
+  "description": "Инди-студия одного разработчика. Создание честных, глубоких и качественных игр и приложений для Android.",
+  "homepage": "https://chestnyyeyb.ru/",
+  "documentation": "https://chestnyyeyb.ru/about/",
+  "contact": {
+    "email": "lincoln@chestnyyeyb.ru",
+    "telegram": "@ChestnyyEyb"
+  },
+  "organization": {
+    "name": "ООО «Честный Эйб»",
+    "legalName": "Общество с ограниченной ответственностью «Честный Эйб»",
+    "taxId": "5012100464",
+    "registrationNumber": "1195081055575",
+    "address": "143980, Московская обл., г. Балашиха, ул. Октябрьская (Железнодорожный мкр.), д. 33, Блок А, помещение V-13, комната 1",
+    "country": "RU"
+  },
+  "resources": [
+    {
+      "type": "mobile-application",
+      "name": "Рассказы дядюшки Эйба",
+      "description": "Читалка коротких авторских рассказов",
+      "platform": "android",
+      "minVersion": "7.0",
+      "category": "books",
+      "rating": "4.8",
+      "ratingCount": "106",
+      "links": [
+        {
+          "type": "google-play",
+          "url": "https://play.google.com/store/apps/details?id=com.gameeyb.uncleabestories"
+        },
+        {
+          "type": "rustore",
+          "url": "https://www.rustore.ru/catalog/app/com.gameeyb.uncleabestories"
+        },
+        {
+          "type": "getapps",
+          "url": "https://global.app.mi.com/developer?id=1156139"
+        }
+      ],
+      "documentation": "https://chestnyyeyb.ru/about/"
+    },
+    {
+      "type": "mobile-application",
+      "name": "КвадроТактика",
+      "description": "Тактическая игра в кубики",
+      "platform": "android",
+      "minVersion": "7.0",
+      "category": "strategy",
+      "rating": "4.8",
+      "ratingCount": "72",
+      "links": [
+        {
+          "type": "rustore",
+          "url": "https://www.rustore.ru/catalog/app/com.gameeyb.quadrotactics"
+        }
+      ],
+      "documentation": "https://chestnyyeyb.ru/about/"
+    }
+  ],
+  "endpoints": [
+    {
+      "path": "/about/",
+      "method": "GET",
+      "description": "Информация о студии и её создателе",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/contacts/",
+      "method": "GET",
+      "description": "Контактная информация студии",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/cooperation/",
+      "method": "GET",
+      "description": "Информация о сотрудничестве и партнёрстве",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/development/",
+      "method": "GET",
+      "description": "Процесс разработки и обратная связь",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/share/",
+      "method": "GET",
+      "description": "Как поддержать проекты студии",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/requisites/",
+      "method": "GET",
+      "description": "Реквизиты для финансовой поддержки",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/terms/",
+      "method": "GET",
+      "description": "Пользовательское соглашение",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/privacy/",
+      "method": "GET",
+      "description": "Политика конфиденциальности",
+      "contentType": "text/html",
+      "language": "ru"
+    },
+    {
+      "path": "/copyright/",
+      "method": "GET",
+      "description": "Авторские права и правила использования контента",
+      "contentType": "text/html",
+      "language": "ru"
+    }
+  ],
+  "social": [
+    {
+      "platform": "google-play",
+      "url": "https://play.google.com/store/apps/dev?id=6551827899764541510"
+    },
+    {
+      "platform": "rustore",
+      "url": "https://www.rustore.ru/catalog/developer/9qrgofwk"
+    },
+    {
+      "platform": "telegram",
+      "url": "https://telegram.me/ChestnyyEyb"
+    },
+    {
+      "platform": "rutube",
+      "url": "https://rutube.ru/u/chestnyyeyb/"
+    },
+    {
+      "platform": "pinterest",
+      "url": "https://www.pinterest.ru/chestnyyeyb/"
+    },
+    {
+      "platform": "2gis",
+      "url": "https://2gis.ru/balashikha/firm/70000001085385845"
+    }
+  ],
+  "metadata": {
+    "lastModified": "2026-11-14",
+    "language": "ru",
+    "country": "RU",
+    "keywords": ["инди-студия", "разработка игр", "android", "kotlin", "пиксель-арт", "HeroSkAge", "рассказы", "тактика"]
+  }
+}
