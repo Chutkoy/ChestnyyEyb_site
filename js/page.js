@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const closeButton = document.querySelector(".page__close");
-  const wrapper = document.querySelector(".page__wrapper");
+  var closeButton = document.querySelector(".page__close");
+  var wrapper = document.querySelector(".page__wrapper");
 
   if (closeButton) {
     closeButton.addEventListener("click", function (event) {
@@ -13,35 +13,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (closeButton && wrapper) {
-    const updateButtonPosition = () => {
-      const wrapperRect = wrapper.getBoundingClientRect();
-      const isMobile = window.innerWidth <= 767;
-      const offset = isMobile ? 10 : 20;
-      const buttonSize = isMobile ? 30 : 40;
+  if (!closeButton || !wrapper) return;
 
-      const viewportHeight = window.innerHeight;
-      const viewportWidth = window.innerWidth;
+  var ticking = false;
+  var mobileQuery = window.matchMedia("(max-width: 767px)");
 
-      const wrapperTop = wrapperRect.top;
-      const wrapperBottom = wrapperRect.bottom;
-      const wrapperRight = wrapperRect.right;
+  function updateButtonPosition() {
+    ticking = false;
 
-      const targetTop = wrapperTop + offset;
-      const minTop = offset;
-      const maxTop = viewportHeight - buttonSize - offset;
+    var wrapperRect = wrapper.getBoundingClientRect();
+    var isMobile = mobileQuery.matches;
+    var offset = isMobile ? 10 : 20;
+    var buttonSize = isMobile ? 30 : 40;
 
-      if (wrapperBottom > 0 && wrapperTop < viewportHeight) {
-        const clampedTop = Math.max(minTop, Math.min(targetTop, maxTop));
-        closeButton.style.top = clampedTop + "px";
+    var viewportHeight = window.innerHeight;
+    var viewportWidth = window.innerWidth;
+    var wrapperTop = wrapperRect.top;
+    var wrapperBottom = wrapperRect.bottom;
+    var wrapperRight = wrapperRect.right;
 
-        const targetRight = viewportWidth - wrapperRight + offset;
-        closeButton.style.right = targetRight + "px";
-      }
-    };
+    if (wrapperBottom <= 0 || wrapperTop >= viewportHeight) return;
 
-    updateButtonPosition();
-    window.addEventListener("scroll", updateButtonPosition, { passive: true });
-    window.addEventListener("resize", updateButtonPosition);
+    var targetTop = wrapperTop + offset;
+    var minTop = offset;
+    var maxTop = viewportHeight - buttonSize - offset;
+    var clampedTop = Math.max(minTop, Math.min(targetTop, maxTop));
+
+    closeButton.style.top = clampedTop + "px";
+    closeButton.style.right = viewportWidth - wrapperRight + offset + "px";
+  }
+
+  function requestUpdate() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(updateButtonPosition);
+  }
+
+  updateButtonPosition();
+  window.addEventListener("scroll", requestUpdate, { passive: true });
+  window.addEventListener("resize", requestUpdate, { passive: true });
+  window.addEventListener("orientationchange", requestUpdate, { passive: true });
+
+  if (typeof mobileQuery.addEventListener === "function") {
+    mobileQuery.addEventListener("change", requestUpdate);
+  }
+
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(requestUpdate);
   }
 });
