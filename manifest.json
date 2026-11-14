@@ -4,7 +4,6 @@
   "description": "Инди-студия разработки игр и приложений для Android",
   "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#252729",
   "theme_color": "#252729",
   "icons": [
