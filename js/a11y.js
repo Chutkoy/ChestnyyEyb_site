@@ -42,22 +42,36 @@
   }
 
   function setupImages() {
-    var images = document.querySelectorAll("img");
-    images.forEach(function (img) {
-      if (!img.hasAttribute("decoding")) img.setAttribute("decoding", "async");
+  var images = document.querySelectorAll("img");
+  var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
 
-      var heroBox = img.closest(".page__image");
-      if (heroBox) {
-        var size = heroBox.classList.contains("page__image-copyright") ? 300 : 330;
-        if (!img.hasAttribute("width")) img.setAttribute("width", String(size));
-        if (!img.hasAttribute("height")) img.setAttribute("height", String(size));
-        if (!img.hasAttribute("fetchpriority")) img.setAttribute("fetchpriority", "high");
-        return;
+  images.forEach(function (img) {
+    if (!img.hasAttribute("decoding")) img.setAttribute("decoding", "async");
+
+    var rect = img.getBoundingClientRect();
+    var isVisible = rect.top < viewportHeight && rect.bottom > 0;
+
+    if (isVisible) {
+      img.removeAttribute("loading");
+      if (!img.hasAttribute("fetchpriority")) {
+        img.setAttribute("fetchpriority", "high");
       }
+      return;
+    }
 
-      if (!img.hasAttribute("loading")) img.setAttribute("loading", "lazy");
-    });
-  }
+    var heroBox = img.closest(".page__image");
+    if (heroBox) {
+      var size = heroBox.classList.contains("page__image-copyright") ? 300 : 330;
+      if (!img.hasAttribute("width")) img.setAttribute("width", String(size));
+      if (!img.hasAttribute("height")) img.setAttribute("height", String(size));
+      img.removeAttribute("loading");
+      if (!img.hasAttribute("fetchpriority")) img.setAttribute("fetchpriority", "high");
+      return;
+    }
+
+    if (!img.hasAttribute("loading")) img.setAttribute("loading", "lazy");
+  });
+}
 
   function setupLiveRegion() {
     var name = document.querySelector(".header__contacts-name");
