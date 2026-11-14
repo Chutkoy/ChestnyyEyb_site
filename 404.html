@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ошибка 404 — Честный Эйб</title>
+    <meta name="description" content="Страница не найдена. Вернитесь на главную страницу инди-студии Честный Эйб." />
+    <meta name="robots" content="noindex, nofollow" />
+    
+    <!-- Абсолютные пути! -->
+    <link type="image/x-icon" rel="shortcut icon" href="/images/favicon/favicon.ico" />
+    <link type="image/png" sizes="32x32" rel="icon" href="/images/favicon/favicon-32.png" />
+    <link type="image/png" sizes="196x196" rel="icon" href="/images/favicon/favicon-196.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/cookie.css" />
+    <script src="/js/cookie.js" defer></script>
+    
+    <style>
+      .error-404 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 50px 20px;
+        color: #d5d5d5;
+      }
+      .error-404__code {
+        font-size: 8rem;
+        font-weight: bold;
+        color: #d4af37;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+      }
+      .error-404__title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+      .error-404__text {
+        font-size: 1.2rem;
+        max-width: 600px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+      }
+      .error-404__link {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #d4af37;
+        color: #252729;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+      }
+      .error-404__link:hover {
+        background-color: #e6c347;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <!-- Абсолютная ссылка на главную -->
+            <a href="/" class="header__logo" aria-label="На главную">
+               <h2 style="color: #d4af37; font-family: sans-serif; text-transform: uppercase; margin: 0;">Честный Эйб</h2>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="error-404">
+        <div class="error-404__code">404</div>
+        <h1 class="error-404__title">Упс! Трюк не удался.</h1>
+        <p class="error-404__text">
+          Кажется, вы свернули не туда, и корпорация <b>Eidovyrex</b> скрыла эту страницу. <br>
+          Не расстраивайтесь, давайте вернёмся на базу и продолжим борьбу!
+        </p>
+        <a href="/" class="error-404__link">Вернуться на главную 🛹</a>
+      </main>
+
+      <div id="cookieConsent">
+        <div class="cookie-title">
+          <img src="/images/Cookie/Cookie.svg" alt="мы используем cookie" />
+        </div>
+        <div class="cookie-buttons">
+          <button onclick="acceptCookies()">
+            <img src="/images/Cookie/Accept.svg" alt="принять" />
+          </button>
+          <button onclick="declineCookies()">
+            <img src="/images/Cookie/Reject.svg" alt="отклонить" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1P81G0D66K"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1P81G0D66K');
+    </script>
+  </body>
+</html>
