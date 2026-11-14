@@ -33,7 +33,7 @@
 
 ## ✨ Ключевые особенности
 
-*   **Производительность:** 100/100 в PageSpeed Insights на десктопе, 98/100 на мобильных. Оптимизация шрифтов (`.woff2`, `preload`, `font-display: swap`), `lazy loading` изображений, критический CSS.
+*   **Производительность:** 100/100 в PageSpeed Insights на десктопе, 98-100/100 на мобильных. Оптимизация шрифтов (`.woff2`, `preload`, `font-display: swap`), `lazy loading` изображений, критический CSS.
 *   **Доступность (a11y):** Skip-link, `aria-label`, видимый фокус, поддержка `prefers-reduced-motion`, `prefers-contrast`, `forced-colors`. Отдельные файлы `a11y.css` и `a11y.js`.
 *   **SEO:** Микроразметка `Organization`, `sitemap.xml`, `robots.txt`, `canonical`, Open Graph, Twitter Cards.
 *   **AI-дружелюбность:** `llms.txt` для LLM, `ai-catalog.json` для AI-агентов, разрешение AI-краулеров в `robots.txt`.
