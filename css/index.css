@@ -132,18 +132,14 @@ button {
 
 .header__logo {
   width: 250px;
+  fill: #d5d5d5;
+  cursor: pointer;
+  transition: all 0.3s ease;
   display: block;
 }
 
-.header__logo img {
-  width: 100%;
-  height: auto;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-.header__logo:hover img {
-  opacity: 0.7;
+.header__logo:hover {
+  fill: #766d7b;
 }
 
 @media screen and (max-width: 767px) {
@@ -354,16 +350,17 @@ button {
   }
 }
 
-.main__image-l img {
+.main__image-l svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  fill: #d5d5d5;
   transition: all 0.3s ease-out;
   display: block;
 }
 
-.main__image-l img:hover {
-  filter: brightness(0.6) sepia(1) hue-rotate(320deg) saturate(5);
+.main__image-l svg:hover {
+  fill: #962828;
 }
 
 .main__image-c {
@@ -380,16 +377,17 @@ button {
   }
 }
 
-.main__image-c img {
+.main__image-c svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  fill: #d5d5d5;
   transition: all 0.3s ease-out;
   display: block;
 }
 
-.main__image-c img:hover {
-  filter: brightness(0.6) sepia(1) hue-rotate(10deg) saturate(5);
+.main__image-c svg:hover {
+  fill: #d4af37;
 }
 
 .main__image-r {
@@ -406,16 +404,17 @@ button {
   }
 }
 
-.main__image-r img {
+.main__image-r svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  fill: #d5d5d5;
   transition: all 0.3s ease-out;
   display: block;
 }
 
-.main__image-r img:hover {
-  filter: brightness(0.6) sepia(1) hue-rotate(160deg) saturate(5);
+.main__image-r svg:hover {
+  fill: #24a0b0;
 }
 
 .main__middle {
