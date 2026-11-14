@@ -36,7 +36,7 @@ function deleteCookie(name) {
 
 function loadAnalytics() {
   if (getCookie("cookieConsent") !== "true") return;
-  if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
+  if (window.dataLayer && window.dataLayer.length > 0) return;
 
   window.dataLayer = window.dataLayer || [];
   if (typeof window.gtag !== "function") {
@@ -48,10 +48,14 @@ function loadAnalytics() {
   var script = document.createElement("script");
   script.async = true;
   script.src = "https://www.googletagmanager.com/gtag/js?id=G-1P81G0D66K";
+  script.onload = function () {
+    window.gtag("js", new Date());
+    window.gtag("config", "G-1P81G0D66K", {
+      anonymize_ip: true,
+      cookie_flags: "SameSite=Strict;Secure"
+    });
+  };
   document.head.appendChild(script);
-
-  window.gtag("js", new Date());
-  window.gtag("config", "G-1P81G0D66K");
 }
 
 function hideConsentBanner() {
