@@ -13,12 +13,14 @@
 
 - **Google Play**: https://play.google.com/store/apps/details?id=com.gameeyb.uncleabestories
 - **RuStore**: https://www.rustore.ru/catalog/app/com.gameeyb.uncleabestories
-- **GetApps**: https://global.app.mi.com/developer?id=1156139
+- **GetApps**: https://global.app.mi.com/details?id=com.gameeyb.uncleabestories
 
 ### КвадроТактика
 Тактическая игра в кубики. Доступна в Google Play, RuStore и GetApps.
 
+- **Google Play**: https://play.google.com/store/apps/details?id=com.gameeyb.quadrotactics
 - **RuStore**: https://www.rustore.ru/catalog/app/com.gameeyb.quadrotactics
+- **GetApps**: https://global.app.mi.com/details?id=com.gameeyb.quadrotactics
 
 ## В разработке
 
