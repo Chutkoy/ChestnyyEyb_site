@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+Disallow: /images/og/
+Disallow: /fonts/
+Disallow: /.gitignore
+Disallow: /.htaccess
+Disallow: /ai-catalog.json
+Disallow: /llms.txt
 
 User-agent: GPTBot
 Allow: /
@@ -46,5 +52,15 @@ Allow: /
 User-agent: meta-externalagent
 Allow: /
 
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
 Sitemap: https://chestnyyeyb.ru/sitemap.xml
+
 Host: https://chestnyyeyb.ru
