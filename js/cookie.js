@@ -87,6 +87,12 @@ function declineCookies() {
   deleteCookie("_ga");
   deleteCookie("_ga_G-1P81G0D66K");
   deleteCookie("_gid");
+  deleteCookie("_gat");
+  deleteCookie("__utma");
+  deleteCookie("__utmb");
+  deleteCookie("__utmc");
+  deleteCookie("__utmt");
+  deleteCookie("__utmz");
   hideConsentBanner();
 }
 
