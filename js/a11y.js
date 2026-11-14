@@ -43,7 +43,8 @@
 
   function setupImages() {
     var images = document.querySelectorAll("img");
-    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var viewportHeight =
+      window.innerHeight || document.documentElement.clientHeight;
 
     images.forEach(function (img) {
       if (!img.hasAttribute("decoding")) img.setAttribute("decoding", "async");
@@ -53,19 +54,18 @@
 
       if (isVisible) {
         img.removeAttribute("loading");
-        if (!img.hasAttribute("fetchpriority")) {
-          img.setAttribute("fetchpriority", "high");
-        }
         return;
       }
 
       var heroBox = img.closest(".page__image");
       if (heroBox) {
-        var size = heroBox.classList.contains("page__image-copyright") ? 300 : 330;
+        var size = heroBox.classList.contains("page__image-copyright")
+          ? 300
+          : 330;
         if (!img.hasAttribute("width")) img.setAttribute("width", String(size));
-        if (!img.hasAttribute("height")) img.setAttribute("height", String(size));
+        if (!img.hasAttribute("height"))
+          img.setAttribute("height", String(size));
         img.removeAttribute("loading");
-        if (!img.hasAttribute("fetchpriority")) img.setAttribute("fetchpriority", "high");
         return;
       }
 
