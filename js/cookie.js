@@ -52,7 +52,7 @@ function loadAnalytics() {
     window.gtag("js", new Date());
     window.gtag("config", "G-1P81G0D66K", {
       anonymize_ip: true,
-      cookie_flags: "SameSite=Strict;Secure"
+      cookie_flags: "SameSite=Strict;Secure",
     });
   };
   document.head.appendChild(script);
@@ -108,10 +108,8 @@ function prepareConsentBanner() {
   if (title && !title.querySelector(".cookie-notice")) {
     var notice = document.createElement("p");
     notice.className = "cookie-notice visually-hidden";
-    notice.innerHTML =
-      "Мы используем cookie-файлы для работы сайта и анонимной статистики посещений. " +
-      'Подробнее — в <a href="https://chestnyyeyb.ru/privacy/">Политике конфиденциальности</a>. ' +
-      "Нажмите «Принять», чтобы разрешить аналитику, или «Отклонить», чтобы отказаться.";
+    notice.textContent =
+      "Мы используем cookie-файлы для работы сайта и анонимной статистики посещений. Подробнее — в Политике конфиденциальности. Нажмите «Принять», чтобы разрешить аналитику, или «Отклонить», чтобы отказаться.";
     title.appendChild(notice);
   }
 
