@@ -1,0 +1,43 @@
+{
+  "name": "Честный Эйб",
+  "short_name": "Честный Эйб",
+  "description": "Инди-студия разработки игр и приложений для Android",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#252729",
+  "theme_color": "#252729",
+  "icons": [
+    {
+      "src": "/images/favicon/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon/favicon-196.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "ru",
+  "dir": "ltr",
+  "categories": ["games", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "О студии",
+      "short_name": "О нас",
+      "description": "Информация о студии Честный Эйб",
+      "url": "/about/",
+      "icons": [{ "src": "/images/favicon/favicon-32.png", "sizes": "32x32" }]
+    },
+    {
+      "name": "Контакты",
+      "short_name": "Связь",
+      "description": "Контактная информация",
+      "url": "/contacts/",
+      "icons": [{ "src": "/images/favicon/favicon-32.png", "sizes": "32x32" }]
+    }
+  ]
+}
