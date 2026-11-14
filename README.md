@@ -33,7 +33,7 @@
 
 ## ✨ Ключевые особенности
 
-*   **Производительность:** 100/100 в PageSpeed Insights на десктопе, 98-100/100 на мобильных. Оптимизация шрифтов (`.woff2`, `preload`, `font-display: swap`), `lazy loading` изображений, критический CSS.
+*   **Производительность:** 100/100 в PageSpeed Insights на десктопе, 98/100 на мобильных. Оптимизация шрифтов (`.woff2`, `preload`, `font-display: swap`), `lazy loading` изображений, критический CSS.
 *   **Доступность (a11y):** Skip-link, `aria-label`, видимый фокус, поддержка `prefers-reduced-motion`, `prefers-contrast`, `forced-colors`. Отдельные файлы `a11y.css` и `a11y.js`.
 *   **SEO:** Микроразметка `Organization`, `sitemap.xml`, `robots.txt`, `canonical`, Open Graph, Twitter Cards.
 *   **AI-дружелюбность:** `llms.txt` для LLM, `ai-catalog.json` для AI-агентов, разрешение AI-краулеров в `robots.txt`.
@@ -42,46 +42,46 @@
 
 ## 📁 Структура проекта
 
-├── index.html # Главная страница
-├── 404.html # Страница ошибки 404
-├── manifest.json # Манифест PWA
-├── robots.txt # Правила для краулеров
-├── sitemap.xml # Карта сайта
-├── llms.txt # Описание для LLM
-├── ai-catalog.json # Каталог для AI-агентов
-├── .htaccess # Настройки Apache (CSP, кэш, сжатие)
-├── LICENSE # Лицензия MIT (только для кода)
-├── README.md # Этот файл
-├── about/ # О компании
-├── contacts/ # Контакты
-├── cooperation/ # Сотрудничество
-├── copyright/ # Копирайт
-├── development/ # Разработка
-├── privacy/ # Политика конфиденциальности
-├── requisites/ # Реквизиты
-├── share/ # Поделиться
-├── terms/ # Пользовательское соглашение
+```
+.
+├── index.html              # Главная страница
+├── 404.html                # Страница ошибки 404
+├── manifest.json           # Манифест PWA
+├── robots.txt              # Правила для краулеров
+├── sitemap.xml             # Карта сайта
+├── llms.txt                # Описание для LLM
+├── ai-catalog.json         # Каталог для AI-агентов
+├── .htaccess               # Настройки Apache (CSP, кэш, сжатие)
+├── LICENSE                 # Лицензия MIT (только для кода)
+├── README.md               # Этот файл
+├── about/                  # О компании
+├── contacts/               # Контакты
+├── cooperation/            # Сотрудничество
+├── copyright/              # Копирайт
+├── development/            # Разработка
+├── privacy/                # Политика конфиденциальности
+├── requisites/             # Реквизиты
+├── share/                  # Поделиться
+├── terms/                  # Пользовательское соглашение
 ├── css/
-│ ├── index.css # Стили главной
-│ ├── page.css # Стили внутренних страниц
-│ ├── cookie.css # Стили cookie-баннера
-│ └── a11y.css # Стили доступности
+│   ├── index.css           # Стили главной
+│   ├── page.css            # Стили внутренних страниц
+│   ├── cookie.css          # Стили cookie-баннера
+│   └── a11y.css            # Стили доступности
 ├── js/
-│ ├── index.js # Скрипты главной
-│ ├── page.js # Скрипты внутренних страниц
-│ ├── cookie.js # Логика cookie и GA
-│ └── a11y.js # Улучшения доступности
+│   ├── index.js            # Скрипты главной
+│   ├── page.js             # Скрипты внутренних страниц
+│   ├── cookie.js           # Логика cookie и GA
+│   └── a11y.js             # Улучшения доступности
 ├── fonts/
-│ ├── Montserrat_0.woff2
-│ ├── Montserrat_0.ttf
-│ ├── BuyanRegular.woff2
-│ └── BuyanRegular.ttf
+│   ├── Montserrat_0.woff2
+│   └── BuyanRegular.woff2
 └── images/
-├── favicon/
-├── Cookie/
-├── Hero/
-└── og/
-
+    ├── favicon/
+    ├── Cookie/
+    ├── Hero/
+    └── og/
+```
 
 ## 🚀 Запуск локально
 
@@ -89,15 +89,17 @@
 
 ```bash
 python -m http.server 8000
+```
 
-Затем откройте http://localhost:8000 в браузере.
+Затем откройте [http://localhost:8000](http://localhost:8000) в браузере.
 
-📄 Лицензия
+## 📄 Лицензия
 
-• Код распространяется под лицензией MIT — см. файл LICENSE.
-• Контент (тексты, изображения, персонажи, логотипы, истории) является интеллектуальной собственностью ООО «Честный Эйб» и защищён авторским правом. Подробнее — на странице Копирайт.
+*   **Код** распространяется под лицензией **MIT** — см. файл [LICENSE](LICENSE).
+*   **Контент** (тексты, изображения, персонажи, логотипы, истории) является интеллектуальной собственностью ООО «Честный Эйб» и защищён авторским правом. Подробнее — на странице [Копирайт](https://chestnyyeyb.ru/copyright/).
 
-📬 Контакты
-• Email: lincoln@chestnyyeyb.ru
-• Telegram: @ChestnyyEyb
-•  Сайт: https://chestnyyeyb.ru/
+## 📬 Контакты
+
+*   **Email:** [lincoln@chestnyyeyb.ru](mailto:lincoln@chestnyyeyb.ru)
+*   **Telegram:** [@ChestnyyEyb](https://telegram.me/ChestnyyEyb)
+*   **Сайт:** [https://chestnyyeyb.ru/](https://chestnyyeyb.ru/)
