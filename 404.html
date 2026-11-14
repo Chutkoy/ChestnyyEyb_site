@@ -1,143 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ошибка 404 — Честный Эйб</title>
-<meta name="description" content="Страница не найдена. Вернитесь на базу инди-студии Честный Эйб — разработчика игр и приложений для Android." />
-<meta name="robots" content="noindex, nofollow" />
-<link rel="canonical" href="https://chestnyyeyb.ru/404.html" />
-<link type="image/x-icon" rel="shortcut icon" href="./images/favicon/favicon.ico" />
-<link type="image/png" sizes="32x32" rel="icon" href="./images/favicon/favicon-32.png" />
-<link type="image/png" sizes="196x196" rel="icon" href="./images/favicon/favicon-196.png" />
-<link rel="manifest" href="./manifest.json" />
-<link rel="stylesheet" href="./css/index.css" />
-<link rel="stylesheet" href="./css/cookie.css" />
-<script src="./js/cookie.js" defer></script>
-<style>
-.page {
-  min-height: 100vh !important;
-  display: flex !important;
-  flex-direction: column !important;
-}
-.error-404 {
-  flex: 1 1 auto !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-  padding: 50px 20px !important;
-  color: #d5d5d5 !important;
-  font-family: "Montserrat_0", Arial, sans-serif !important;
-  position: relative !important;
-  z-index: 100 !important;
-  width: 100% !important;
-  box-sizing: border-box !important;
-}
-.error-404__code {
-  font-size: 8rem !important;
-  font-weight: bold !important;
-  color: #ffffff !important;
-  line-height: 1 !important;
-  margin-bottom: 20px !important;
-  letter-spacing: -2px !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.error-404__title {
-  font-size: 2rem !important;
-  margin-bottom: 15px !important;
-  color: #d5d5d5 !important;
-  font-weight: 500 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.error-404__text {
-  font-size: 1.1rem !important;
-  max-width: 550px !important;
-  line-height: 1.6 !important;
-  margin-bottom: 50px !important;
-  color: #a0a0a0 !important;
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.error-404__link {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 15px !important;
-  padding: 18px 32px !important;
-  background-color: transparent !important;
-  color: #d5d5d5 !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-  font-size: 1rem !important;
-  border: 2px solid #4a4c4e !important;
-  transition: all 0.3s ease !important;
-  position: relative !important;
-  overflow: hidden !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.error-404__link svg {
-  width: 20px !important;
-  height: 20px !important;
-  fill: #d5d5d5 !important;
-  transition: all 0.3s ease !important;
-}
-.error-404__link:hover {
-  border-color: #24a0b0 !important;
-  color: #24a0b0 !important;
-}
-.error-404__link:hover svg {
-  fill: #24a0b0 !important;
-  transform: translateX(5px) !important;
-}
-#cookieConsent {
-  z-index: 9999 !important;
-}
-@media (max-width: 600px) {
-  .error-404__code {
-    font-size: 5rem !important;
-  }
-  .error-404__title {
-    font-size: 1.5rem !important;
-  }
-}
-</style>
-</head>
-<body>
-<div class="page">
-<main class="error-404">
-<div class="error-404__code">404</div>
-<h1 class="error-404__title">Упс! Трюк не удался.</h1>
-<p class="error-404__text">
-Кажется, вы свернули не туда, и корпорация <b style="color: #962828;">Eidovyrex</b> скрыла эту страницу.<br />
-Не расстраивайтесь, давайте вернёмся на базу и продолжим борьбу!
-</p>
-<a href="./" class="error-404__link">
-<span>Вернуться на базу</span>
-<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-</svg>
-</a>
-</main>
-<div id="cookieConsent">
-<div class="cookie-title">
-<img src="./images/Cookie/Cookie.svg" alt="мы используем cookie" />
-</div>
-<div class="cookie-buttons">
-<button onclick="acceptCookies()">
-<img src="./images/Cookie/Accept.svg" alt="принять" />
-</button>
-<button onclick="declineCookies()">
-<img src="./images/Cookie/Reject.svg" alt="отклонить" />
-</button>
-</div>
-</div>
-</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ошибка 404 — Честный Эйб</title>
+    <meta
+      name="description"
+      content="Страница не найдена. Вернитесь на базу инди-студии Честный Эйб — разработчика игр и приложений для Android."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://chestnyyeyb.ru/404.html" />
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./images/favicon/favicon-32.png"
+    />
+    <link
+      type="image/png"
+      sizes="196x196"
+      rel="icon"
+      href="./images/favicon/favicon-196.png"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cookie.css" />
+    <link rel="stylesheet" href="./css/a11y.css" />
+    <script src="./js/cookie.js" defer></script>
+    <script src="./js/a11y.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <main class="error-404">
+        <div class="error-404__code">404</div>
+        <h1 class="error-404__title">Упс! Трюк не удался.</h1>
+        <p class="error-404__text">
+          Кажется, вы свернули не туда, и корпорация
+          <b style="color: #962828">Eidovyrex</b> скрыла эту страницу.<br />
+          Не расстраивайтесь, давайте вернёмся на базу и продолжим борьбу!
+        </p>
+        <a href="./" class="error-404__link">
+          <span>Вернуться на базу</span>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+            />
+          </svg>
+        </a>
+      </main>
+      <div id="cookieConsent">
+        <div class="cookie-title">
+          <img src="./images/Cookie/Cookie.svg" alt="мы используем cookie" />
+        </div>
+        <div class="cookie-buttons">
+          <button onclick="acceptCookies()">
+            <img src="./images/Cookie/Accept.svg" alt="принять" />
+          </button>
+          <button onclick="declineCookies()">
+            <img src="./images/Cookie/Reject.svg" alt="отклонить" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
