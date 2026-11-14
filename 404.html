@@ -7,15 +7,14 @@
     <meta name="description" content="Страница не найдена. Вернитесь на главную страницу инди-студии Честный Эйб." />
     <meta name="robots" content="noindex, nofollow" />
     
-    <!-- Абсолютные пути! -->
-    <link type="image/x-icon" rel="shortcut icon" href="/images/favicon/favicon.ico" />
-    <link type="image/png" sizes="32x32" rel="icon" href="/images/favicon/favicon-32.png" />
-    <link type="image/png" sizes="196x196" rel="icon" href="/images/favicon/favicon-196.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link type="image/x-icon" rel="shortcut icon" href="./images/favicon/favicon.ico" />
+    <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon/favicon-32.png" />
+    <link type="image/png" sizes="196x196" rel="icon" href="./images/favicon/favicon-196.png" />
+    <link rel="manifest" href="./manifest.json" />
 
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/cookie.css" />
-    <script src="/js/cookie.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cookie.css" />
+    <script src="./js/cookie.js" defer></script>
     
     <style>
       .error-404 {
@@ -31,7 +30,7 @@
       .error-404__code {
         font-size: 8rem;
         font-weight: bold;
-        color: #d4af37;
+        color: #d4af37; /* Золотой из ваших стилей */
         line-height: 1;
         margin-bottom: 20px;
         text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
@@ -69,8 +68,7 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <!-- Абсолютная ссылка на главную -->
-            <a href="/" class="header__logo" aria-label="На главную">
+            <a href="./" class="header__logo" aria-label="На главную">
                <h2 style="color: #d4af37; font-family: sans-serif; text-transform: uppercase; margin: 0;">Честный Эйб</h2>
             </a>
           </div>
@@ -82,21 +80,21 @@
         <h1 class="error-404__title">Упс! Трюк не удался.</h1>
         <p class="error-404__text">
           Кажется, вы свернули не туда, и корпорация <b>Eidovyrex</b> скрыла эту страницу. <br>
-          Не расстраивайтесь, давайте вернёмся на базу и продолжим борьбу!
+          Не расстраивайтесь, давайте верн`мся на базу и продолжим борьбу!
         </p>
         <a href="/" class="error-404__link">Вернуться на главную 🛹</a>
       </main>
 
       <div id="cookieConsent">
         <div class="cookie-title">
-          <img src="/images/Cookie/Cookie.svg" alt="мы используем cookie" />
+          <img src="./images/Cookie/Cookie.svg" alt="мы используем cookie" />
         </div>
         <div class="cookie-buttons">
           <button onclick="acceptCookies()">
-            <img src="/images/Cookie/Accept.svg" alt="принять" />
+            <img src="./images/Cookie/Accept.svg" alt="принять" />
           </button>
           <button onclick="declineCookies()">
-            <img src="/images/Cookie/Reject.svg" alt="отклонить" />
+            <img src="./images/Cookie/Reject.svg" alt="отклонить" />
           </button>
         </div>
       </div>
