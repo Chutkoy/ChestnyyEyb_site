@@ -7,6 +7,7 @@
 
     if (!main.id) main.id = "main-content";
     main.setAttribute("tabindex", "-1");
+    main.setAttribute("aria-label", "Основное содержимое страницы");
 
     if (document.querySelector(".skip-link")) return;
 
@@ -66,11 +67,39 @@
     }
   }
 
+  function setupLandmarks() {
+    var header = document.querySelector("header");
+    var footer = document.querySelector("footer");
+    if (header && !header.getAttribute("aria-label")) {
+      header.setAttribute("aria-label", "Шапка сайта");
+    }
+    if (footer && !footer.getAttribute("aria-label")) {
+      footer.setAttribute("aria-label", "Подвал сайта");
+    }
+  }
+
+  function setupPageStructure() {
+    var wrapper = document.querySelector(".page__wrapper");
+    if (wrapper && !wrapper.getAttribute("role")) {
+      wrapper.setAttribute("role", "article");
+    }
+
+    var heroImage = document.querySelector(".page__image img");
+    if (heroImage) {
+      var alt = heroImage.getAttribute("alt") || "";
+      if (alt && alt.length < 60) {
+        heroImage.setAttribute("alt", "Иллюстрация героя: " + alt);
+      }
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     setupSkipLink();
     setupExternalLinks();
     setupDecorativeSvg();
     setupImages();
     setupLiveRegion();
+    setupLandmarks();
+    setupPageStructure();
   });
 })();
