@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Разработка — Честный Эйб: тестирование и идеи для игр</title>
 
     <meta
@@ -24,12 +29,31 @@
       content="https://chestnyyeyb.ru/images/og/og_image.png"
     />
     <meta property="og:url" content="https://chestnyyeyb.ru/development/" />
+    <link rel="canonical" href="https://chestnyyeyb.ru/development/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Разработка — Честный Эйб: тестирование и идеи для игр"
+    />
+    <meta
+      name="twitter:description"
+      content="Разработка в студии ООО «Честный Эйб»: тестирование, идеи по геймдизайну, диалог с разработчиком."
+    />
+    <meta
+      name="twitter:image"
+      content="https://chestnyyeyb.ru/images/og/og_image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Логотип студии «Честный Эйб» — разработка игр и приложений для Android"
+    />
 
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link
       rel="preload"
       as="font"
-      type="font/ttf"
+      type="font/woff2"
       href="../fonts/Montserrat_0.woff2"
       crossorigin
     />
@@ -151,10 +175,10 @@
           <img src="../images/Cookie/Cookie.svg" alt="мы используем cookie" />
         </div>
         <div class="cookie-buttons">
-          <button onclick="acceptCookies()">
+          <button>
             <img src="../images/Cookie/Accept.svg" alt="принять" />
           </button>
-          <button onclick="declineCookies()">
+          <button>
             <img src="../images/Cookie/Reject.svg" alt="отклонить" />
           </button>
         </div>
