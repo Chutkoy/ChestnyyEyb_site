@@ -37,7 +37,7 @@
 *   **Доступность (a11y):** Skip-link, `aria-label`, видимый фокус, поддержка `prefers-reduced-motion`, `prefers-contrast`, `forced-colors`. Отдельные файлы `a11y.css` и `a11y.js`.
 *   **SEO:** Микроразметка `Organization`, `sitemap.xml`, `robots.txt`, `canonical`, Open Graph, Twitter Cards.
 *   **AI-дружелюбность:** `llms.txt` для LLM, `ai-catalog.json` для AI-агентов, разрешение AI-краулеров в `robots.txt`.
-*   **Безопасность:** Content Security Policy (CSP), `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`. Cookie-баннер с отложенной загрузкой Google Analytics.
+*   **Безопасность:** Content Security Policy (CSP) и Referrer-Policy через meta-теги на всех страницах, принудительный HTTPS (Enforce HTTPS в настройках GitHub Pages), gzip-сжатие и кэширование на стороне GitHub Pages. Cookie-баннер с отложенной загрузкой Google Analytics.
 *   **PWA-основа:** `manifest.json` с иконками, `theme-color`, `shortcuts`.
 
 ## 📁 Структура проекта
