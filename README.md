@@ -51,7 +51,6 @@
 ├── sitemap.xml             # Карта сайта
 ├── llms.txt                # Описание для LLM
 ├── ai-catalog.json         # Каталог для AI-агентов
-├── .htaccess               # Настройки Apache (CSP, кэш, сжатие)
 ├── LICENSE                 # Лицензия MIT (только для кода)
 ├── NOTICE.md               # Уточнение про права на контент
 ├── README.md               # Этот файл
