@@ -3,7 +3,6 @@ Allow: /
 Disallow: /images/og/
 Disallow: /fonts/
 Disallow: /.gitignore
-Disallow: /.htaccess
 
 User-agent: GPTBot
 Allow: /
