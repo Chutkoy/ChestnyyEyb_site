@@ -59,5 +59,3 @@ User-agent: MJ12bot
 Crawl-delay: 10
 
 Sitemap: https://chestnyyeyb.ru/sitemap.xml
-
-Host: https://chestnyyeyb.ru
